@@ -67,6 +67,8 @@ def variables_test():
     var_path_1 = os.path.abspath(__file__)
     var_os_name_1 = os.name
 
+    # The following code illustrates the usage of the print function in Python.
+    print("Variables Test")
     print(f"Variable: var_int_1 | Value: {var_int_1} | Type: {type(var_int_1)}")
     print(f"Variable: var_int_2 | Value: {var_int_2} | Type: {type(var_int_2)}")
     print(f"Variable: var_float_1 | Value: {var_float_1} | Type: {type(var_float_1)}")
