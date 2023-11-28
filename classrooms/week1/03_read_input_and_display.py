@@ -16,6 +16,12 @@ import os
 # input function is used to read data from the user.
 # input function always returns a string.
 # The input function can take a prompt as an argument.
+# The prompt is displayed to the user before reading the data.
+# name = input("Enter your name: ")
+# Shows the following prompt to the user:
+# Enter your name:
+# The user enters the name and presses the enter key.
+# The entered text is stored in the variable name.
 
 # Read the name of the user, age, and school name and print them.
 name = input("Enter your name: ")

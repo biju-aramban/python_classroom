@@ -94,8 +94,22 @@ var_none_1 = None
 # The print function can be used to print the values of the variables.
 # The print function can be used to print the values of the variables along with message(s) that you want to print.
 # When you want to print more than one value, you can use the comma (,) to separate the values.
+# If there are multiple values to be printed, the values are separated by a space by default.
+# If you want to change the separator, you can use the sep argument.
+# Examples:
+# print("Hello", "World", sep="-") - prints Hello-World
+# print("Hello", "World", sep="") - prints HelloWorld
+# print("Hello", "World", sep="*") - prints Hello*World
+# print("Hello", "World") - prints Hello World  < Default separator is a space
 
 # type() function is used to determine the type of the variable.
+# The output of the type() function is a name of a class to which variable belongs to.
+
+# Examples:
+# print(type(var_int_1)) - prints <class 'int'>
+# print(type(var_float_1)) - prints <class 'float'>
+# print(type(var_str_1)) - prints <class 'str'>
+
 # Check the output for details.
 
 print("Variables Test")
