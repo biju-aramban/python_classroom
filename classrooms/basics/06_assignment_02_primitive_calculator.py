@@ -54,3 +54,33 @@
 # Result of subtraction of 1 with 2 is: 1.
 # Result of multiplication of 2 by 2 is: 4.
 # Result of division of 2 by 2 is: 1.
+
+print("Welcome to the primitive calculator")
+print("Please enter two numbers and an operator")
+print("The operator can be one of the following: +, -, * or /")
+
+num_x = int(input("Enter the first number: "))
+num_y = int(input("Enter the second number: "))
+operator = input("Enter the operator: ")
+
+num_x = int(num_x)
+num_y = int(num_y)
+
+if operator == "+":
+    result = num_x + num_y
+    print(f"Result of addition of {num_x} with {num_y} is: {result}")
+
+elif operator == "-":
+    result = num_x - num_y
+    print(f"Result of subtraction of {num_x} with {num_y} is: {result}")
+
+elif operator == "*":
+    result = num_x * num_y
+    print(f"Result of multiplication of {num_x} with {num_y} is: {result}")
+
+elif operator == "/":
+    result = num_x / num_y
+    print(f"Result of division of {num_x} with {num_y} is: {result}")
+
+else:
+    print("Invalid operator. Please enter either +, -, * or /")
