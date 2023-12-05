@@ -8,7 +8,7 @@
 # else block would be executed if none of the if block conditions are True.
 #
 # example:
-# if condition:
+# if <condition>:   # True or False
 #      block of code
 # else:
 #      block of code
@@ -17,7 +17,7 @@
 # if number == 1:
 #     print("Condition is True. Executing if block of code")
 #     print("The number is 1")
-#       print("if block of code is executed")
+#     print("if block of code is executed")
 # else:
 #       print("Condition is False. Executing else block of code")
 #       print("The number is not 1")
@@ -59,18 +59,22 @@ print("Welcome to the primitive calculator")
 print("Please enter two numbers and an operator")
 print("The operator can be one of the following: +, -, * or /")
 
-num_x = int(input("Enter the first number: "))
-num_y = int(input("Enter the second number: "))
+num_x = input("Enter the first number: ")
+num_y = input("Enter the second number: ")
 operator = input("Enter the operator: ")
 
 num_x = int(num_x)
 num_y = int(num_y)
 
+# if
+# if - else
+# if (one) - elif (any number of elif-s) - else (one)
+
 if operator == "+":
     result = num_x + num_y
     print(f"Result of addition of {num_x} with {num_y} is: {result}")
 
-elif operator == "-":
+elif operator == "-":   # else if
     result = num_x - num_y
     print(f"Result of subtraction of {num_x} with {num_y} is: {result}")
 
