@@ -1,15 +1,22 @@
+# Accept 2 numbers from the user
+# Print the largest number out of the 2 numbers
+# Accept all these numbers in a single list
 
-# print(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, sep=', ')
+number_list = []
+num_count = 4
 
-# This prints in ascending order
-# 1, 2, ..... 100
-# a = 1
-# while a <= 100:
-#     print(a, end=', ')
-#     a = a + 1
+a = 0
+while a < num_count:
+    num = input("Enter a number: ")
+    num = int(num)
+    number_list.append(num)
+    a += 1
 
-# This prints in descending order
-a = 100
-while a > 0:
-    print(a, end=', ')
-    a = a - 2
+print("The number list: ", number_list)
+largest = number_list[0]
+
+for num in number_list:
+    if int(num) > largest:
+        largest = int(num)
+
+print("The largest number is: ", largest)

@@ -55,10 +55,13 @@ print("Printing rectangle:")
 loop_counter = 0
 # Looping through the height of the rectangle
 # Height is the number of lines
-while loop_counter < int(size_v):
+size_v = int(size_v)
+size_h = int(size_h)
+
+while loop_counter < size_v:
     # The following line prints the fill character, size number of times
     # This is the width of the rectangle
-    print(fill_char * int(size_h))
+    print(fill_char * size_h)
     # The following line increments the loop counter by 1
     loop_counter = loop_counter + 1
 
