@@ -34,7 +34,7 @@ while True:
     record = f_reader.readline()
     if not record:
         break
-    
+
     time.sleep(2)
     print(record.strip())
 
@@ -50,7 +50,7 @@ print(records)
 
 write_record_file = r"D:\workspace\github\python_classroom\classrooms\basics\beme_write_records.txt"
 # Open a file in write mode and write into it.
-f_writer = open(write_record_file, "w")
+f_writer = open(write_record_file, "w")     # "a" for append
 # this returns a line from the file
 f_writer.write("Hello world\n")
 f_writer.write("Hello another world\n")
