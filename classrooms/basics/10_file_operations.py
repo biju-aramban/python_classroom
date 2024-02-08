@@ -14,7 +14,8 @@
 # a: Opens a file for appending at the end of the file without truncating it. Creates a new file if it does not exist.
 # x: Opens a file for exclusive creation. If the file already exists, the operation fails.
 
-record_file = r"D:\workspace\github\python_classroom\classrooms\basics\beme_records.txt"
+import time
+record_file = r"C:\temp\test.txt"
 
 # Open a file in read mode and read all the content
 f_reader = open(record_file, "r")
@@ -22,7 +23,7 @@ f_reader = open(record_file, "r")
 records = f_reader.read()
 f_reader.close()
 
-print(records)
+# print(records)
 
 # Open a file in read mode and read the file line by line.
 # Works for text files and not for binary files
@@ -33,6 +34,8 @@ while True:
     record = f_reader.readline()
     if not record:
         break
+    
+    time.sleep(2)
     print(record.strip())
 
 f_reader.close()
