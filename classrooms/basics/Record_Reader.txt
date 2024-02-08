@@ -1,0 +1,27 @@
+Create a text file
+Example: C:\Users\Public\Documents\beme_records.txt
+Let the file have some student information
+Example:
+```
+sl_no,first_name,last_name,age
+1,John,Doe,20
+2,Jane,Doe,19
+```
+Create a python file
+record_reader.py
+Read the file content as list and print it.
+
+open(file_name, mode)
+This returns to you a file object
+file_name: Name of the file to be opened
+mode: Mode in which the file is opened
+r: Read mode
+w: Write mode
+a: Append mode
+
+f_reader = open(file_name, mode)
+f_reader has a function readlines which returns a list of lines in the file as a list
+So you call the function like this
+f_reader.readlines()
+Since you want to store the contents read in some variable, you can do this:
+records = f_reader.readlines()
